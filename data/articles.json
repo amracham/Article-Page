@@ -1,23 +1,26 @@
 [
   {
-    "id": "a1b2c3d4",
-    "title": "Getting Started with Mindful Mornings",
+    "id": "iiip-industry-immersion-internship",
+    "title": "Inside the Industry Immersion and Internship Program",
+    "tag": "Flagship Programme",
     "thumbnail": null,
-    "content": "Most people wake up and immediately reach for their phone. It's a habit worth breaking.\n\nStarting your day with even five quiet minutes before screens sets a calmer tone for everything that follows. Try stepping outside, stretching, or simply sitting with a cup of coffee in silence.\n\nSmall rituals compound. A slow morning doesn't mean a slow day — it means a deliberate one.",
-    "createdAt": 1725100800000
+    "content": "For most students, an internship means eight weeks at a desk in a city they already know. GEC's Industry Immersion and Internship Program (IIIP) was built to do more than that — a 12-week, three-phase journey that carries students from a host company's office in Singapore to a virtual internship they can complete from anywhere, and back again for a final round of presentations and awards.\n\nThe program opens with a two-week Industry Immersion phase in Singapore. Students go through workplace readiness workshops, are formally onboarded by their host organisations, and spend time on institutional and campus visits alongside cultural tours — the goal is to get them oriented in a global corporate environment before the real work starts, not after.\n\nFrom there, the program moves into an eight-week virtual Internship phase. Students execute real project deliverables for their host company remotely, major-aligned to their field of study, supported by weekly check-ins and ongoing mentorship from industry professionals. It's designed to prove that meaningful, hands-on work doesn't require a plane ticket — though for IIIP students, one more trip is still coming.\n\nThe final two weeks — Project Validation — bring students back to Singapore to present what they've built. This phase includes industry site visits and formal final presentations in front of host companies, closing with a recognition ceremony where certificates and awards are presented: the Most Resilient Award, Outstanding Intern of the Year, and Most Impactful Project among them.\n\nAcross all three phases, IIIP is built around four things: direct industry immersion, structured professional development, future-ready competency in strategic thinking and adaptability, and global networking with the industry leaders students meet along the way. Every placement is major-aligned, so the work connects back to what students are actually studying.\n\nAt the end of the program, host companies and partner universities receive a comprehensive completion report documenting milestones across all three phases, alongside a student feedback and evaluation summary covering workplace readiness, technical competency, and cross-cultural adaptability — insights that shape the next cohort as much as they close out this one.",
+    "createdAt": 1727827200000
   },
   {
-    "id": "e5f6g7h8",
-    "title": "The Quiet Rise of Local Bookstores",
+    "id": "iip-two-week-immersion",
+    "title": "IIP: Two Weeks of Industry Immersion in Singapore",
+    "tag": "Flagship Programme",
     "thumbnail": null,
-    "content": "Independent bookstores were supposed to disappear a decade ago. Instead, many neighborhoods are seeing new ones open.\n\nReaders are craving curation again — a staff pick shelf beats an algorithm for a lot of people. There's also something to be said for a space built around browsing rather than buying fast.\n\nIf there's one near you, it's worth a visit this weekend.",
-    "createdAt": 1725705600000
+    "content": "Not every student can commit to a 12-week program — and not every program needs to be that long to change how a student sees their field. GEC's Industry and Immersion Program (IIP) compresses the core of an international industry experience into two focused weeks in Singapore.\n\nWhere IIIP layers a virtual internship and a return validation phase onto its immersion period, IIP stays purely focused on exposure: direct time inside international workplaces and global corporate environments, built around major-aligned placements so students land somewhere relevant to what they're actually studying.\n\nThe two weeks are organised around the same three outcomes GEC builds every program toward — industry immersion through real company access, future-ready competency in strategic thinking and adaptability, and global networking with the professionals students meet on-site. It's less about completing a deliverable and more about seeing, firsthand, how a workplace across the world actually runs.\n\nThe program closes the way GEC's programs do: a formal ceremony, held in front of invited guests, celebrating each student's participation across the industry visits, workshops, and institutional engagements that filled the two weeks — with certificates of completion presented to every participant.\n\nAfterward, partner universities receive the same kind of documentation IIIP produces at a smaller scale: a completion report covering the trainings delivered and student progress during the immersion, plus a feedback and evaluation summary capturing what students actually took away from it.",
+    "createdAt": 1727222400000
   },
   {
-    "id": "i9j0k1l2",
-    "title": "Three Lessons from a Year of Cooking at Home",
+    "id": "student-voices-singapore",
+    "title": "What Our Students Are Saying About Singapore",
+    "tag": "Student Voices",
     "thumbnail": null,
-    "content": "A year ago I decided to stop ordering takeout more than once a week. Here's what stuck.\n\nFirst, a sharp knife matters more than any gadget. Second, salt earlier and more often than feels natural. Third, most recipes are guidelines — the best meals came from adjusting on the fly once I understood the basics.\n\nCooking stopped feeling like a chore once I stopped following instructions to the letter.",
-    "createdAt": 1726310400000
+    "content": "The slide decks and program structures tell you what GEC's programs are built to do. The students who go through them tell you what actually lands.\n\nAmong the stops on a recent Singapore immersion was a visit to SNEF, and for Tith HavHeang, a student from the American University of Phnom Penh, it reframed how workplace practice actually looks outside a classroom. \"The visit to SNEF was a valuable experience that helped me better understand Singapore's workplace practices and learn from real world experiences beyond the classroom,\" she said.\n\nFor Chan Rithymonyleap, also from the American University of Phnom Penh, the impact was more specific to her field. \"The experience sharpened my legal skills, deepened understanding of international law, and fostered professionals' connections,\" she said — a reminder that the value of an immersion trip isn't generic; it compounds differently depending on what a student walked in already building toward.\n\nBoth reflections point at the same thing GEC designs its programs around: proximity. Sitting across from professionals actually doing the work, in the country where the work happens, teaches things that a case study back on campus can't quite reach. It's why the closing ceremonies, the completion reports, and the feedback evaluations that follow every IIIP and IIP cohort matter as much as the site visits themselves — they're how a two- or twelve-week trip turns into something a student can carry back into their next semester, and their first job after it.",
+    "createdAt": 1728432000000
   }
 ]

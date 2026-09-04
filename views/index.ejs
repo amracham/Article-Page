@@ -1,7 +1,8 @@
-<% pageTitle = 'Article Page' -%>
+<% pageTitle = 'GEC — Programme Stories' -%>
 <%- include('partials/header') %>
 
-<h1 class="page-heading">Latest articles</h1>
+<h1 class="page-heading">Programme Stories</h1>
+<p class="page-subheading">Updates from GEC's youth education and industry immersion programmes.</p>
 
 <% if (articles.length === 0) { %>
   <p class="empty-state">No articles yet. Check back soon.</p>
@@ -17,6 +18,7 @@
           <% } %>
         </div>
         <div class="card-body">
+          <% if (article.tag) { %><span class="tag"><%= article.tag %></span><% } %>
           <h2><%= article.title %></h2>
           <p class="excerpt"><%= excerpt(article.content) %></p>
           <span class="date"><%= formatDate(article.createdAt) %></span>

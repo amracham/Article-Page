@@ -6,6 +6,7 @@
   <% if (article.thumbnail) { %>
     <img class="article-thumb" src="<%= article.thumbnail %>" alt="<%= article.title %>" />
   <% } %>
+  <% if (article.tag) { %><span class="tag"><%= article.tag %></span><% } %>
   <h1><%= article.title %></h1>
   <p class="date"><%= formatDate(article.createdAt) %></p>
   <div class="article-content">
