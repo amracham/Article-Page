@@ -1,4 +1,4 @@
-# GEC Programme Stories
+# GEC Newspaper
 
 A simple article website for GEC (Global Education and Concierge Services): a scrollable home feed and a full article view, styled to GEC's brand guide.
 
@@ -30,10 +30,17 @@ Articles live in `data/articles.json`. Each entry looks like:
   "id": "unique-id",
   "title": "Article title",
   "tag": "Flagship Programme",
-  "thumbnail": null,
+  "thumbnail": "/img/programme/photo.jpg",
+  "gallery": [
+    { "src": "/img/programme/photo-2.jpg", "caption": "What's happening in this photo." }
+  ],
   "content": "Paragraph one.\n\nParagraph two.",
   "createdAt": 1725100800000
 }
 ```
 
-Add or edit entries in that file directly to publish new articles. (`thumbnail` can be a path under `public/` to an image, or `null` to fall back to the brand-gradient placeholder; `tag` is optional and shows as a small pill on the card and article page.)
+Add or edit entries in that file directly to publish new articles.
+
+- `thumbnail`: path under `public/` to an image, or `null` to fall back to the brand-gradient placeholder.
+- `gallery`: optional array of additional photos, rendered below the article body with captions.
+- `tag`: optional, shows as a small pill on the card and article page.
