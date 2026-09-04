@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": "a1b2c3d4",
+    "title": "Getting Started with Mindful Mornings",
+    "thumbnail": null,
+    "content": "Most people wake up and immediately reach for their phone. It's a habit worth breaking.\n\nStarting your day with even five quiet minutes before screens sets a calmer tone for everything that follows. Try stepping outside, stretching, or simply sitting with a cup of coffee in silence.\n\nSmall rituals compound. A slow morning doesn't mean a slow day — it means a deliberate one.",
+    "createdAt": 1725100800000
+  },
+  {
+    "id": "e5f6g7h8",
+    "title": "The Quiet Rise of Local Bookstores",
+    "thumbnail": null,
+    "content": "Independent bookstores were supposed to disappear a decade ago. Instead, many neighborhoods are seeing new ones open.\n\nReaders are craving curation again — a staff pick shelf beats an algorithm for a lot of people. There's also something to be said for a space built around browsing rather than buying fast.\n\nIf there's one near you, it's worth a visit this weekend.",
+    "createdAt": 1725705600000
+  },
+  {
+    "id": "i9j0k1l2",
+    "title": "Three Lessons from a Year of Cooking at Home",
+    "thumbnail": null,
+    "content": "A year ago I decided to stop ordering takeout more than once a week. Here's what stuck.\n\nFirst, a sharp knife matters more than any gadget. Second, salt earlier and more often than feels natural. Third, most recipes are guidelines — the best meals came from adjusting on the fly once I understood the basics.\n\nCooking stopped feeling like a chore once I stopped following instructions to the letter.",
+    "createdAt": 1726310400000
+  }
+]
