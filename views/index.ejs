@@ -1,0 +1,29 @@
+<% pageTitle = 'Article Page' -%>
+<%- include('partials/header') %>
+
+<h1 class="page-heading">Latest articles</h1>
+
+<% if (articles.length === 0) { %>
+  <p class="empty-state">No articles yet. <a href="/new">Write the first one.</a></p>
+<% } else { %>
+  <div class="article-grid">
+    <% articles.forEach(function(article) { %>
+      <a class="article-card" href="/article/<%= article.id %>">
+        <div class="thumb">
+          <% if (article.thumbnail) { %>
+            <img src="<%= article.thumbnail %>" alt="<%= article.title %>" loading="lazy" />
+          <% } else { %>
+            <div class="thumb-placeholder"></div>
+          <% } %>
+        </div>
+        <div class="card-body">
+          <h2><%= article.title %></h2>
+          <p class="excerpt"><%= excerpt(article.content) %></p>
+          <span class="date"><%= formatDate(article.createdAt) %></span>
+        </div>
+      </a>
+    <% }); %>
+  </div>
+<% } %>
+
+<%- include('partials/footer') %>

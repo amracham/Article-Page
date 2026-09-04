@@ -1,0 +1,18 @@
+<% pageTitle = article.title -%>
+<%- include('partials/header') %>
+
+<article class="article-full">
+  <a class="back-link" href="/">&larr; Back to articles</a>
+  <% if (article.thumbnail) { %>
+    <img class="article-thumb" src="<%= article.thumbnail %>" alt="<%= article.title %>" />
+  <% } %>
+  <h1><%= article.title %></h1>
+  <p class="date"><%= formatDate(article.createdAt) %></p>
+  <div class="article-content">
+    <% article.content.split(/\n\s*\n/).forEach(function(paragraph) { %>
+      <p><%= paragraph %></p>
+    <% }); %>
+  </div>
+</article>
+
+<%- include('partials/footer') %>
