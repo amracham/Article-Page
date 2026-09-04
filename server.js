@@ -17,6 +17,8 @@ function excerpt(content, len = 140) {
 app.locals.excerpt = excerpt;
 app.locals.formatDate = (ts) =>
   new Date(ts).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+app.locals.readTime = (content) =>
+  Math.max(1, Math.round(content.trim().split(/\s+/).length / 200)) + ' min read';
 
 app.get('/', (req, res) => {
   const articles = db.getAll();

@@ -3,15 +3,21 @@
 
 <article class="article-full">
   <a class="back-link" href="/">&larr; Back to articles</a>
+  <% if (article.tag) { %><p class="eyebrow"><%= article.tag %></p><% } %>
+  <h1><%= article.title %></h1>
+  <div class="byline">
+    <span>GEC Newspaper</span>
+    <span class="byline-dot">&middot;</span>
+    <span><%= formatDate(article.createdAt) %></span>
+    <span class="byline-dot">&middot;</span>
+    <span><%= readTime(article.content) %></span>
+  </div>
   <% if (article.thumbnail) { %>
     <img class="article-thumb" src="<%= article.thumbnail %>" alt="<%= article.title %>" />
   <% } %>
-  <% if (article.tag) { %><span class="tag"><%= article.tag %></span><% } %>
-  <h1><%= article.title %></h1>
-  <p class="date"><%= formatDate(article.createdAt) %></p>
   <div class="article-content">
-    <% article.content.split(/\n\s*\n/).forEach(function(paragraph) { %>
-      <p><%= paragraph %></p>
+    <% article.content.split(/\n\s*\n/).forEach(function(paragraph, i) { %>
+      <p<% if (i === 0) { %> class="drop-cap"<% } %>><%= paragraph %></p>
     <% }); %>
   </div>
   <% if (article.gallery && article.gallery.length) { %>

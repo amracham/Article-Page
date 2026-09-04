@@ -1,31 +1,50 @@
 <% pageTitle = 'GEC Newspaper' -%>
 <%- include('partials/header') %>
 
-<h1 class="page-heading">GEC Newspaper</h1>
-<p class="page-subheading">Updates from GEC's youth education and industry immersion programmes.</p>
-
 <% if (articles.length === 0) { %>
   <p class="empty-state">No articles yet. Check back soon.</p>
-<% } else { %>
-  <div class="article-grid">
-    <% articles.forEach(function(article) { %>
-      <a class="article-card" href="/article/<%= article.id %>">
-        <div class="thumb">
-          <% if (article.thumbnail) { %>
-            <img src="<%= article.thumbnail %>" alt="<%= article.title %>" loading="lazy" />
-          <% } else { %>
-            <div class="thumb-placeholder"></div>
-          <% } %>
-        </div>
-        <div class="card-body">
-          <% if (article.tag) { %><span class="tag"><%= article.tag %></span><% } %>
-          <h2><%= article.title %></h2>
-          <p class="excerpt"><%= excerpt(article.content) %></p>
-          <span class="date"><%= formatDate(article.createdAt) %></span>
-        </div>
-      </a>
-    <% }); %>
-  </div>
+<% } else {
+  var lead = articles[0];
+  var rest = articles.slice(1);
+%>
+  <section class="lead-story">
+    <a class="lead-link" href="/article/<%= lead.id %>">
+      <div class="lead-thumb">
+        <% if (lead.thumbnail) { %>
+          <img src="<%= lead.thumbnail %>" alt="<%= lead.title %>" />
+        <% } else { %>
+          <div class="thumb-placeholder"></div>
+        <% } %>
+      </div>
+      <p class="eyebrow">Top Story<% if (lead.tag) { %> &middot; <%= lead.tag %><% } %></p>
+      <h1 class="lead-title"><%= lead.title %></h1>
+      <p class="lead-excerpt"><%= excerpt(lead.content, 220) %></p>
+      <span class="date"><%= formatDate(lead.createdAt) %></span>
+    </a>
+  </section>
+
+  <% if (rest.length) { %>
+    <div class="section-label"><span>More From GEC</span></div>
+    <div class="brief-list">
+      <% rest.forEach(function(article) { %>
+        <a class="brief" href="/article/<%= article.id %>">
+          <div class="brief-thumb">
+            <% if (article.thumbnail) { %>
+              <img src="<%= article.thumbnail %>" alt="<%= article.title %>" loading="lazy" />
+            <% } else { %>
+              <div class="thumb-placeholder"></div>
+            <% } %>
+          </div>
+          <div class="brief-body">
+            <% if (article.tag) { %><span class="tag"><%= article.tag %></span><% } %>
+            <h2><%= article.title %></h2>
+            <p class="excerpt"><%= excerpt(article.content, 110) %></p>
+            <span class="date"><%= formatDate(article.createdAt) %></span>
+          </div>
+        </a>
+      <% }); %>
+    </div>
+  <% } %>
 <% } %>
 
 <%- include('partials/footer') %>

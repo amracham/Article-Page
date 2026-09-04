@@ -7,20 +7,25 @@
   <link rel="icon" href="/img/gec-logo.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="/">
-      <img class="logo-mark" src="/img/gec-logo.jpg" alt="GEC — Global Education & Concierge Services" />
-      <span class="logo-text">
-        <span class="logo-name">GEC Newspaper</span>
-        <span class="logo-tagline">Stronger People, Closer World</span>
+  <header class="masthead">
+    <a class="masthead-brand" href="/">
+      <img class="masthead-logo" src="/img/gec-logo.jpg" alt="GEC — Global Education & Concierge Services" />
+      <span class="masthead-titles">
+        <span class="masthead-wordmark">GEC Newspaper</span>
+        <span class="masthead-tagline">Stronger People, Closer World</span>
       </span>
     </a>
-    <nav>
-      <a href="/">Home</a>
-    </nav>
+    <div class="masthead-rule">
+      <div class="rule-thick"></div>
+      <div class="rule-thin"></div>
+    </div>
+    <div class="dateline">
+      <span class="dateline-date"><%= formatDate(Date.now()) %> &middot; Singapore Edition</span>
+      <nav><a href="/">Home</a></nav>
+    </div>
   </header>
   <main class="container">
